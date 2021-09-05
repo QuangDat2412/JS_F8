@@ -90,19 +90,68 @@
 
 // logger('Mess','error')
 // 7.Enhanced object literals
-var name = 'Javascript';
-var price = 1000;
-var course = {
-    name,
-    price,
-    getName(){
-        return name;
-    }
+// var name = 'Javascript';
+// var price = 1000;
+// var course = {
+//     name,
+//     price,
+//     getName(){
+//         return name;
+//     }
+// }
+
+// console.log(course.getName());
+// 8. Destructuring
+// var array = ['Javascript', 'PHP','Ruby'];
+
+// var [a,b,...rest] = array;
+
+// console.log(rest);
+
+// var course = {
+//     name:'Javascript',
+//     price:1000,
+//     description:'alo',
+//     image:'image-address',
+//     children:{
+//         name:'ReactJS'
+//     }
+// };
+
+// var {name: parentName, children:{name: childrenName}} = course;
+
+// console.log(parentName);
+// console.log(childrenName);
+
+// 9. Rest parameters
+// function sum(...params) {
+//     console.log(params)
+// }
+
+// sum(1,2,3,4);
+// 10. Spread
+// var array1 =['Javascript', 'PHP;']
+// var array2 =['ReactJS', 'PHP'];
+// var array3 =[...array1,...array2];
+
+// var array =['Javascript','PHP','ReactJS'];
+
+// function logger(...rest){
+//     for(var i=0; i<rest.length; i++){
+//         console.log(rest[i]);
+//     }
+// }
+
+// logger(...array);
+// console.log(array3);
+// 11. Tagged template literals
+function highlight(...rest){
+    console.log(rest);
 }
 
-console.log(course.getName());
-// 8. Destructuring
-// 9. Rest parameters
-// 10. Spread
-// 11. Tagged template literals
+var brand = 'F8';
+var course = 'Javascript';
+
+highlight`Hoc lap trinh ${course} tai ${brand}`;
+
 // 12. Modules
