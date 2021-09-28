@@ -1,4 +1,4 @@
-var myString = 'Alo mn oi mn  ';
+var myString = "Alo mn oi mn  ";
 
 // 1. Length
 // console.log(myString.length);
@@ -30,12 +30,10 @@ var myString = 'Alo mn oi mn  ';
 
 // console.log(languages.split(', '));
 
-
 // 9. Get a character by index
 
 // const myString2 = "Le Dat";
 // console.log(myString.charAt(5));
-
 
 // Number.isFinite(2 / 0); // false
 // Number.isFinite(20 / 5); // true
@@ -71,7 +69,6 @@ var myString = 'Alo mn oi mn  ';
 // (18).toString();     // '18'
 // (17.3).toString();   // '17.3'
 
-
 /*
     Lam viec voi Array
     1.to string
@@ -84,18 +81,13 @@ var myString = 'Alo mn oi mn  ';
     8.concat
     9.slicing
 */
-var aString = [
-    'abc',
-    'def',
-    'xyz'
-]
+var aString = ["abc", "def", "xyz"];
 // 1.to string
 // console.log(aString.toString());
 
 // 2.join
 // console.log(aString.join('-'));
 // console.log(aString.indexOf('mn'));
-
 
 // 3.pop
 // Xoa phan tu cuoi cung
@@ -140,7 +132,6 @@ var aString = [
 // 9.slicing
 // cut mang tu a den b
 // console.log(aString.slice(0, 2));
-
 
 // Làm bài tập tại đây
 
@@ -201,7 +192,7 @@ var aString = [
 
 // Cau lenh re nhanh - If else
 
-// var date = 2; 
+// var date = 2;
 
 // if(date===2){
 //     console.log('Hom nay la thu 2');
@@ -212,7 +203,6 @@ var aString = [
 // }else{
 //     console.log('Khong biet')
 // }
-
 
 // Switch
 // var date = 9;
@@ -230,7 +220,6 @@ var aString = [
 //     default:
 //         console.log('Khong biet');
 // }
-
 
 // Toan tu 3 ngoi
 
@@ -259,7 +248,6 @@ var aString = [
 
 // console.log(run(7.2));
 
-
 // For loop
 
 // var myArray = [
@@ -274,12 +262,11 @@ var aString = [
 //     console.log(i);
 // }
 
-
 // var myInfo = {
 //     name: 'Le dat',
 //     age: 22,
 //     address: 'Ha noi',
-    
+
 // };
 
 // for (var value of Object.values(myInfo)){
@@ -298,13 +285,12 @@ var aString = [
 //     }
 // }
 
-
 /**
  * forEach()
  * every()
  * some()
  * find()
- */ 
+ */
 
 // var courses = [
 //     {
@@ -334,7 +320,6 @@ var aString = [
 //     }
 // ];
 
-
 // Duyet tat ca
 // courses.forEach(function(course,index){
 //     console.log(index, course);
@@ -347,7 +332,6 @@ var aString = [
 // });
 
 // console.log(isFree);
-
 
 // Chi can 1 phan tu trong mang dung
 // var isFree = courses.some(function(course,index){
@@ -366,14 +350,12 @@ var aString = [
 
 // console.log(listCourse);
 
-
 // Bai 1
 // var formValues= [
 //     { field: 'name', value: 'Sơn Đặng' },
 //     { field: 'age', value: 18 },
 //     { field: 'address', value: 'Hà Nội' },
 // ]
-
 
 // function getRequestBodyFromValues(formValues) {
 
@@ -383,7 +365,6 @@ var aString = [
 //     });
 //     return list;
 // }
-
 
 // Bai 2
 // var numbers= [1,2,3]
@@ -412,9 +393,8 @@ var aString = [
 //     },
 // ]
 
-
 // function findAMonsterByAttack(monsters) {
-    
+
 //     check = monsters.find(function(monster,index){
 //         return monster.attack===150;
 //     });
@@ -440,7 +420,6 @@ var aString = [
 // }
 
 // console.log(findStringsInArrayByKeyword(keyword,strings));
-
 
 // var courses = [
 //     {
@@ -470,7 +449,6 @@ var aString = [
 //     }
 // ];
 
-
 // var newCourse = courses.map(function(course,index,originArray){
 //     return {
 //         id: course.id,
@@ -485,7 +463,7 @@ var aString = [
 // console.log(newCourse);
 // var inputs = [1, 20, -8, 0, 16];
 // function convertToBoolean(inputs) {
-    
+
 //     var newInput = inputs.map(function(input){
 //         return (input).toString();
 //     });
@@ -544,7 +522,7 @@ var aString = [
 // var inputs =[1, 2, function() {}, NaN];
 
 // function sumNumbers(inputs) {
-//     function numberHandler (accumulator, currentValue) { 
+//     function numberHandler (accumulator, currentValue) {
 //         if(typeof currentValue ==='number' && isNaN(currentValue) ===false){
 //             return accumulator + currentValue;
 //         }else{
@@ -589,12 +567,11 @@ var aString = [
 
 // var totalCoin = courses.reduce(function(total, course){
 //     i++;
-    
+
 //     console.log(i,total,course);
 
 //     return total + course.coin;
 // },0);
-
 
 // var depthArray = [1, 2, [3, 4], 5, 6, [7, 8, 9]];
 
@@ -638,7 +615,6 @@ var aString = [
 
 // console.log(run(input))
 
-
 /*
 Math object
 Math.PI
@@ -660,7 +636,6 @@ Math.max
 // console.log(Math.min(1,5,9));
 // console.log(Math.max(1,5,9));
 
-
 // Call back
 
 // function myFunction(param){
@@ -673,16 +648,91 @@ Math.max
 
 // myFunction(myCallback);
 
+var courses = ["Javascript", "PHP", "Ruby"];
 
-// var courses = [
-//     'Javascript',
-//     'PHP',
-//     'Ruby'
-// ];
-
-// courses.map(function(course) {
-//     console.log(course);
-// });
+courses.map(function (course) {
+    console.log(course);
+});
 
 // reduce2
 
+// Array.prototype.reduce2 = function(callback,result){
+//     let i=0
+//     if(arguments.length<2) {
+//         i=1
+//         result = this[0]
+//     }
+
+//     for(; i < this.length; i++) {
+//         result = callback(result, this[i],i,this)
+//     }
+//     return result
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const result =numbers.reduce((total, number) =>{
+//     return total + number;
+// },20);
+// console.log(result);
+
+// Array.prototype.map2 = function (callback) {
+//     let newArr = [];
+//     for (let i = 0; i < this.length; i++) {
+//         newArr[i] = callback(this[i], i, this);
+//     }
+//     return newArr;
+// };
+// var domain = [2, 3, 4];
+
+// console.log(
+//     domain.map((item) => {
+//         return item * 2;
+//     })
+// );
+
+// Array.prototype.filter2 = function (callback) {
+//     let newArr = [];
+//     for (let i = 0; i < this.length; i++) {
+//         if (callback(this[i], i, this)) {
+//             newArr.push(this[i]);
+//         }
+//     }
+//     return newArr;
+// };
+// var numbers = [5, 10, 20, 22, 60, 75, 90];
+
+// var new_numbers = numbers.filter(function (item) {
+//     return item % 2 == 0;
+// });
+
+// console.log(new_numbers);
+// Array.prototype.find2 = function (callback) {
+//     for (let i = 0; i < this.length; i++) {
+//         if (callback(this[i], i, this)) {
+//             return this[i];
+//         }
+//         console.log(i);
+//     }
+// };
+// const ages = [3, 10, 28, 20];
+
+// function checkAge(age) {
+//     return age > 20;
+// }
+
+// let age = ages.find2(checkAge);
+// console.log(age); // 28
+// Array.prototype.some2 = function (callback) {
+//     for (let i = 0; i < this.length; i++) {
+//         if (callback(this[i], i, this)) return true;
+//     }
+//     return false;
+// };
+
+// Array.prototype.every2 = function (callback) {
+//     for (let i = 0; i < this.length; i++) {
+//         if (!callback(this[i], i, this)) return false;
+//     }
+//     return true;
+// }; // Code hết luôn cho hiểu ae ạ
